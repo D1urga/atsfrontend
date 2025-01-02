@@ -12,7 +12,7 @@ export default function page() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/v1/resume/getAllResume"
+          "https://atsbackend-c36c.onrender.com/api/v1/resume/getAllResume"
         ); // Example API
         if (!response.ok) {
           throw new Error("Network response was not ok");

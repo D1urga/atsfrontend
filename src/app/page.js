@@ -101,7 +101,7 @@ Implemented real-time updates with WebSocket support.
     setIsloading(true);
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/resume/getResume",
+        "https://atsbackend-c36c.onrender.com/api/v1/resume/getResume",
         {
           method: "POST",
           headers: {
