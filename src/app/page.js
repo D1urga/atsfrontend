@@ -143,7 +143,7 @@ Implemented real-time updates with WebSocket support.
           ></textarea>
           <div className={styles.block}>
             <FaArrowAltCircleDown className={styles.icon} />
-            <p className={styles.title}>Upload Your Resume Above</p>
+            <p className={styles.title}>Upload Your Resume </p>
           </div>
           <input
             type="file"

@@ -69,9 +69,9 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.intro2}>
-        <p>Developed by anoop chaudhary</p>
+        <p>Developed by anoop Kumar</p>
 
-        <p>Designed by anoop chaudhary</p>
+        <p>Designed by anoop Kumar</p>
       </div>
     </div>
   );
