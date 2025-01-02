@@ -1,0 +1,164 @@
+@media screen and (min-width: 900px) {
+  .main {
+    display: flex;
+    height: 720px;
+    margin-top: 50px;
+    padding-top: 40px;
+    background-color: rgb(248, 248, 248);
+  }
+  .ul {
+    height: 86%;
+    overflow-y: scroll;
+    margin-top: 40px;
+  }
+  .li {
+    background-color: rgb(236, 236, 244);
+    margin: 10px 10px;
+    width: 400px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .title {
+    padding-top: 20px;
+    font-size: 13px;
+    padding-bottom: 5px;
+    color: blue;
+    font-weight: 600;
+  }
+  .div2 {
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 0 0 2px 0;
+    border-radius: 10px;
+  }
+  .val1 {
+    font-size: 14px;
+  }
+  .name {
+    padding: 0 30px;
+    font-size: 30px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .main {
+      background-color: rgb(20, 20, 20);
+    }
+    .li {
+      background-color: rgb(70, 69, 69);
+    }
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 520px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    margin-top: 40px;
+    padding-top: 40px;
+    background-color: rgb(248, 248, 248);
+  }
+  .ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 300px;
+    overflow-y: scroll;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .li {
+    background-color: rgb(236, 236, 244);
+    margin: 10px 10px;
+    width: 90%;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .title {
+    padding-top: 20px;
+    font-size: 13px;
+    padding-bottom: 5px;
+    color: blue;
+    font-weight: 600;
+  }
+  .div2 {
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 0 0 2px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .val1 {
+    font-size: 14px;
+  }
+  .name {
+    padding: 0 30px;
+    font-size: 30px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .main {
+      background-color: rgb(20, 20, 20);
+    }
+    .li {
+      background-color: rgb(70, 69, 69);
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    max-height: 1300px;
+    margin-top: 40px;
+    padding-top: 40px;
+    background-color: rgb(248, 248, 248);
+  }
+  .ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 300px;
+    overflow-y: scroll;
+    list-style: none;
+    margin-top: 30px;
+  }
+  .li {
+    background-color: rgb(236, 236, 244);
+    margin: 10px 10px;
+    width: 90%;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .title {
+    padding-top: 20px;
+    font-size: 13px;
+    padding-bottom: 5px;
+    color: blue;
+    font-weight: 600;
+  }
+  .div2 {
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 0 0 2px 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .val1 {
+    font-size: 14px;
+  }
+  .name {
+    padding: 0 30px;
+    font-size: 20px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .main {
+      background-color: rgb(20, 20, 20);
+    }
+    .li {
+      background-color: rgb(70, 69, 69);
+    }
+  }
+}
