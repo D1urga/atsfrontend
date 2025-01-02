@@ -4,7 +4,7 @@
     height: 720px;
     margin-top: 50px;
     padding-top: 40px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
   }
   .ul {
     height: 86%;
@@ -55,7 +55,7 @@
     height: 1200px;
     margin-top: 40px;
     padding-top: 40px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
   }
   .ul {
     display: flex;
@@ -112,7 +112,7 @@
     max-height: 1300px;
     margin-top: 40px;
     padding-top: 40px;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
   }
   .ul {
     display: flex;
