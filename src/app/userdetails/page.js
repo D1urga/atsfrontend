@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 export default function page() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isloading, setIsloading] = useState(false);
   const [error, setError] = useState(null);
   const [activepage, setActivepage] = useState(0);
 
@@ -29,8 +30,8 @@ export default function page() {
     fetchData();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (loading) return <p className={styles.load}>Loading...</p>;
+  if (error) return <p className={styles.error}>Error: {error}</p>;
   return (
     <div className={styles.main}>
       <div className={styles.div1}>

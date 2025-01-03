@@ -39,6 +39,12 @@
     padding: 0 30px;
     font-size: 30px;
   }
+  .load {
+    margin-top: 100px;
+  }
+  .error {
+    margin-top: 100px;
+  }
   @media (prefers-color-scheme: dark) {
     .main {
       background-color: rgb(20, 20, 20);
@@ -96,6 +102,12 @@
     padding: 0 30px;
     font-size: 30px;
   }
+  .load {
+    margin-top: 100px;
+  }
+  .error {
+    margin-top: 100px;
+  }
   @media (prefers-color-scheme: dark) {
     .main {
       background-color: rgb(20, 20, 20);
@@ -152,6 +164,12 @@
   .name {
     padding: 0 30px;
     font-size: 20px;
+  }
+  .load {
+    margin-top: 100px;
+  }
+  .error {
+    margin-top: 100px;
   }
   @media (prefers-color-scheme: dark) {
     .main {

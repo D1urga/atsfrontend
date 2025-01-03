@@ -43,17 +43,6 @@ export default function Appbar() {
             Jobs
           </Link>
         </li>{" "}
-        <li>
-          <Link
-            href=""
-            className={styles.link}
-            onClick={() => {
-              setIsopen(!isopen);
-            }}
-          >
-            About
-          </Link>
-        </li>
       </ul>
       <button className={styles.btn}>Contact</button>
       <FaBars

@@ -123,17 +123,17 @@ export default function Home() {
 }
 
 const CircularProgress = ({ percentage = 0 }) => {
-  const radius = 140; // Radius of the circle
-  const strokeWidth = 35; // Width of the stroke
-  const normalizedRadius = radius - strokeWidth / 2; // Adjust for stroke width
-  const circumference = 2 * Math.PI * normalizedRadius; // Circumference of the circle
-  const strokeDashoffset = circumference - (percentage / 100) * circumference; // Offset based on percentage
+  const radius = 140;
+  const strokeWidth = 35;
+  const normalizedRadius = radius - strokeWidth / 2;
+  const circumference = 2 * Math.PI * normalizedRadius;
+  const strokeDashoffset = circumference - (percentage / 100) * circumference;
 
   return (
     <svg
       height={radius * 2}
       width={radius * 2}
-      style={{ transform: "rotate(-0deg)" }} // Rotate to start at the top
+      style={{ transform: "rotate(-0deg)" }}
     >
       {/* Background Circle */}
       <circle
@@ -141,7 +141,7 @@ const CircularProgress = ({ percentage = 0 }) => {
         cy={radius}
         r={normalizedRadius}
         fill="transparent"
-        stroke="#e6e6e6" // Light gray background
+        stroke="#e6e6e6"
         strokeWidth={strokeWidth}
       />
       {/* Progress Circle */}
@@ -150,11 +150,11 @@ const CircularProgress = ({ percentage = 0 }) => {
         cy={radius}
         r={normalizedRadius}
         fill="transparent"
-        stroke="#4caf50" // Progress color
+        stroke="#4caf50"
         strokeWidth={strokeWidth}
-        strokeDasharray={circumference} // Total length of the circle
-        strokeDashoffset={strokeDashoffset} // Adjusted length based on percentage
-        strokeLinecap="round" // Rounded edges for the stroke
+        strokeDasharray={circumference}
+        strokeDashoffset={strokeDashoffset}
+        strokeLinecap="round"
       />
       {/* Percentage Text */}
       <text
