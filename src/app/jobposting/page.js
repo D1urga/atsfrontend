@@ -4,6 +4,7 @@ import axios from "axios";
 import styles from "./page.module.css";
 
 export default function JobForm() {
+  const [isuploading, setIsuploading] = useState(false);
   const [formData, setFormData] = useState({
     jobTitle: "",
     description: "",
@@ -20,6 +21,7 @@ export default function JobForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsuploading(true);
     try {
       const response = await axios.post(
         "https://atsbackend-c36c.onrender.com/api/v1/job/postJob",
@@ -29,6 +31,7 @@ export default function JobForm() {
     } catch (error) {
       console.error("Error posting job:", error);
     }
+    setIsuploading(false);
   };
 
   return (
@@ -104,7 +107,7 @@ export default function JobForm() {
           </div>
         </div>
         <button type="submit" className={styles.btn}>
-          Submit
+          {isuploading ? "Uploading" : "Submit"}
         </button>
       </form>
     </div>

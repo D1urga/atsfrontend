@@ -13,21 +13,21 @@ export default function page() {
       try {
         const response = await fetch(
           "https://atsbackend-c36c.onrender.com/api/v1/resume/getAllResume"
-        ); // Example API
+        );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         const result = await response.json();
-        setData(result.data); // Set the fetched data to state
+        setData(result.data);
       } catch (error) {
-        setError(error.message); // Handle errors
+        setError(error.message);
       } finally {
-        setLoading(false); // Stop loading indicator
+        setLoading(false);
       }
     };
 
     fetchData();
-  }, []); // Empty dependency array ensures it runs once when the component mounts
+  }, []);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;

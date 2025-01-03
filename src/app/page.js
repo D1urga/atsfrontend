@@ -43,60 +43,6 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const prompt = `
-Convert the following unstructured text into a structured document in JSON format.
-
-Sample Resume Data
-John Doe
-123 Main Street, Cityville, NY 56789
-Email: john.doe@example.com | Phone: (123) 456-7890
-LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe
-
-Professional Summary
-Innovative and deadline-driven Software Engineer with 5+ years of experience designing and developing scalable applications. Adept at collaborating with cross-functional teams to deliver high-quality software solutions.
-
-Skills
-Programming Languages: JavaScript, Python, Java, C++
-Frameworks & Libraries: React.js, Node.js, Django, Express
-Tools: Git, Docker, Jenkins, Kubernetes
-Databases: MySQL, MongoDB, PostgreSQL
-Other: Agile Methodologies, RESTful APIs, CI/CD, Cloud Services (AWS, Azure)
-Work Experience
-Senior Software Engineer
-XYZ Tech Solutions, New York, NY
-January 2020 – Present
-
-Led the design and implementation of a large-scale customer management system, improving user retention by 30%.
-Optimized application performance, reducing API response times by 40%.
-Collaborated with cross-functional teams to ensure project delivery on time and within budget.
-Mentored junior developers and conducted code reviews to uphold quality standards.
-Software Developer
-ABC Innovations, San Francisco, CA
-July 2017 – December 2019
-
-Developed and maintained web applications using React and Node.js.
-Automated data processing workflows, reducing manual effort by 25%.
-Integrated third-party APIs to enhance application functionality.
-Participated in Agile ceremonies and contributed to sprint planning and retrospectives.
-Education
-Bachelor of Science in Computer Science
-University of Example, Cityville, NY
-Graduated: May 2017
-
-Certifications
-AWS Certified Solutions Architect – Associate
-Certified Kubernetes Administrator (CKA)
-Projects
-E-commerce Platform
-
-Built a fully functional e-commerce application with React and Node.js.
-Integrated payment gateways and implemented user authentication.
-Task Management System
-
-Designed a task-tracking app using Python and Django.
-Implemented real-time updates with WebSocket support.
-
-`;
     const data1 = { prompt };
     setIsloading(true);
     try {
