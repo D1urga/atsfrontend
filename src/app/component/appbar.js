@@ -34,7 +34,7 @@ export default function Appbar() {
         </li>{" "}
         <li>
           <Link
-            href=""
+            href="/jobposting"
             className={styles.link}
             onClick={() => {
               setIsopen(!isopen);
